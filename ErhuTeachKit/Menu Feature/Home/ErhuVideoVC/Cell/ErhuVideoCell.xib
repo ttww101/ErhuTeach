@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ErhuVideoCell" customModule="iFitnessMan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Erhu_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="X69-nS-PYJ">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="259.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xu-Xn-hdP">
+                        <rect key="frame" x="15" y="15" width="330" height="229.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2HJ-WU-6m4">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="AYV-sr-Nph"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNy-LE-Bb6">
+                                <rect key="frame" x="5" y="185" width="320" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tNy-LE-Bb6" secondAttribute="bottom" id="Lem-QA-oII"/>
+                            <constraint firstAttribute="trailing" secondItem="tNy-LE-Bb6" secondAttribute="trailing" constant="5" id="MsE-O5-Pgg"/>
+                            <constraint firstAttribute="trailing" secondItem="2HJ-WU-6m4" secondAttribute="trailing" id="Rha-Om-ud6"/>
+                            <constraint firstItem="2HJ-WU-6m4" firstAttribute="top" secondItem="8Xu-Xn-hdP" secondAttribute="top" id="Smc-Js-XBp"/>
+                            <constraint firstItem="tNy-LE-Bb6" firstAttribute="leading" secondItem="8Xu-Xn-hdP" secondAttribute="leading" constant="5" id="UtZ-wE-bZg"/>
+                            <constraint firstItem="2HJ-WU-6m4" firstAttribute="leading" secondItem="8Xu-Xn-hdP" secondAttribute="leading" id="cyJ-Tz-VYl"/>
+                            <constraint firstItem="tNy-LE-Bb6" firstAttribute="top" secondItem="2HJ-WU-6m4" secondAttribute="bottom" constant="5" id="pb1-Dx-0P4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X69-nS-PYJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7tU-9J-7mA"/>
+                    <constraint firstItem="8Xu-Xn-hdP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8su-GI-ATq"/>
+                    <constraint firstAttribute="trailing" secondItem="X69-nS-PYJ" secondAttribute="trailing" id="Rqz-RQ-krq"/>
+                    <constraint firstAttribute="bottom" secondItem="X69-nS-PYJ" secondAttribute="bottom" id="fSI-HZ-NFC"/>
+                    <constraint firstItem="8Xu-Xn-hdP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="nSB-Zt-lrc"/>
+                    <constraint firstItem="X69-nS-PYJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oVC-gw-o0b"/>
+                    <constraint firstAttribute="trailing" secondItem="8Xu-Xn-hdP" secondAttribute="trailing" constant="15" id="qDM-Fe-C0z"/>
+                    <constraint firstAttribute="bottom" secondItem="8Xu-Xn-hdP" secondAttribute="bottom" constant="15" id="u2t-5V-mMi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="videoImg" destination="2HJ-WU-6m4" id="FMn-id-66J"/>
+                <outlet property="videoLabel" destination="tNy-LE-Bb6" id="EFI-Qy-6iG"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Erhu_back.png" width="2016" height="2272"/>
+    </resources>
+</document>
